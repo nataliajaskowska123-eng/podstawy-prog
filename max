@@ -1,8 +1,1 @@
-#!/usr/bin/bash
-declare -a tablica=(100 12 9 70 16 0 81 50 99 143)
-max=${tablica[0]}
-for x in "${tablica[0]}; do
-if ((x > max )); then
-max=$x
-fi
-done
+
