@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 declare -a tablica=(100 12 9 70 16 0 81 50 99 144)
 max=${tablica[0]}
-for x in "${tablica[0]}"; do 
+for x in "${tablica[@]}"; do 
 if (( x > max )); then
 max=$x
 fi

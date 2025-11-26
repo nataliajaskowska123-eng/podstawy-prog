@@ -1,0 +1,16 @@
+#!/usr/bin/bash
+declare -a tablica=(100 12 9 70 16 0 81)
+len=${#tablica[@]}
+
+echo ${tablica[@]}
+for (( j = 0; j < len -1; j++));do
+	for (( i = 0; i < len -j -1; i++)); do 
+		if (( ${tablica[i]} > ${tablica[i+1]} )); then
+		x=${tablica[i]}
+		tablica[i]=${tablica[i+1]}
+		tablica[i+1]=$x
+		
+		fi 
+	done
+done
+echo ${tablica[@]}
