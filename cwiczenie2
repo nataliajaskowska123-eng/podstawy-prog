@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+declare a=2
+declare b=4
+declare c=7
+for ((i=i; i<=20; i++));do
+a=$(( a * i ))
+b=$(( b + a + i ))
+c=$((c+( a - i )))
+ echo "a=$a, b=$b, c=$c"
+	if (( a % 2 == 0 && c % 2 == 0)); then
+echo "zmiennie sa parzyste"
+	fi
+done
